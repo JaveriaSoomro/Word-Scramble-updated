@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo Bhai';
+  }
+  body{
+    background-color: rgb(255, 171, 140);
+    color: wheat;
+  }
+  .container{
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    background-color: rgb(183, 51, 3);
+    max-width: 900px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    width: 50%;
+    height: 350px;
+    box-shadow: 0 4px 8px 0 rgb(92, 26, 2), 
+    0 6px 20px 0 rgb(92, 26, 2);
+    border-radius: 5px;
+  }
+  #container2{
+    display: none;
+    font-size: 30px;
+  }
+  #container2 i{
+    margin-top: 80px;
+  }
+  .fa-circle-check{
+    color: rgb(129, 235, 129);
+  }
+  .fa-circle-xmark{
+    color: rgb(251, 127, 127);
+  }
+  .fa-triangle-exclamation{
+    color: rgb(237, 237, 130);
+  }
+  #container2 p{
+    margin-top: 40px;
+    text-wrap: wrap;
+    text-align: center;
+  }
+  .heading{
+    font-weight: bold;
+    font-size: 30px;
+    padding: 5px;
+    cursor: pointer;
+  }
+  .random-word{
+    font-size: 70px;
+    cursor: pointer;
+  }
+  
+  .hint{
+    font-size: 20px;
+  }
+  .time{
+    display: flex;
+    gap: 3px;
+    font-size: 20px;
+  }
+   .container input{
+    border: none;
+    outline: none;
+    width: 500px;
+    background-color:wheat;
+    padding: 10px;
+    border-radius: 3px;
+    color: rgb(121, 35, 4);
+    font-size: 16px;
+    box-shadow: 0 1px 10px 0 rgb(151, 42, 2), 
+    0 1px 10px 0 rgb(151, 42, 2);
+  }
+  
+  .container button,
+  .container2 button{
+    padding: 16px;
+    width: 150px;
+    background-color: wheat;
+    color: rgb(183, 51, 3);
+    border-radius:3px ;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 1px 10px 0 rgb(151, 42, 2), 
+    0 1px 10px 0 rgb(151, 42, 2);
+    transition: all ease 0.3s ;
+  }
+  .container button:hover{
+    background-color:rgb(248, 120, 73);
+    color: wheat;
+  }
+  .buttons{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+  .answer{
+    margin-bottom: 40rem;
+  }

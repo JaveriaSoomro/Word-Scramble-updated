@@ -1,0 +1,48 @@
+@media only screen and (max-width: 600px){
+    body{
+     font-size: 20px;
+    }
+    .heading{
+     font-size: 23px;
+    }
+    .random-word{
+     font-size: 40px;
+   }
+     .container{
+         left: 13%;
+         padding: 12px;
+         height: 90%;
+         width: 67%;
+         gap: 1px;
+     }
+     .hint{
+         font-size: 17px;
+         text-align: center;
+     }
+     .time{
+           font-size: 16px;
+       }
+       .container input{
+         width: 100%;
+         padding: 1px;
+       }
+     .container button,
+     .container2 button{
+   padding: 3px;
+   width: 100%;
+   font-size: 12px;
+ }
+ .buttons{
+     display: flex;
+     justify-content: space-evenly;
+     padding: 10px;
+     gap: 90px;
+   }
+   .container2,
+   .container{
+     height: 40%;
+   }
+   .container2 p{
+     font-size: 14px;
+   }
+ }
