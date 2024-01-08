@@ -67,7 +67,7 @@ function correct(){
  function incorrect(){
     container2.innerHTML = "";
     container2.innerHTML += `<i class="fa-regular fa-circle-xmark fa-2xl"></i>
-                          <p>Oops! Your Answer is Inorrect!!</p>
+                          <p>Oops! Your Answer is Incorrect!!</p>
                           <p>Correct Answer is ${wordList[random].word}!!</p>
                           <button class="buttons" onclick="playAgain()">Play Again!!</button>`;
  }
@@ -90,17 +90,17 @@ function timer(){
      time.innerHTML = "";
      time.innerHTML = html;
     timeCount--;
-    if(timeCount < 0 ){
+    if(timeCount < 0){
         time.innerHTML = "";
+        checkInput(NULL);
         time.innerHTML +=  `<p>Time Left :</p><span> 00 Seconds</span>`;
         UserInput.style.pointerEvents = "none";
         container.style.display = "none";
         container2.style.display = "flex";
         container2.innerHTML = "";
-        container2.innerHTML += `<i class="fa-regular fa-circle-xmark fa-2xl"></i>
-                              <p>Oops! Time's Up</p>
-                              <p>Correct Answer is ${wordList[random].word}!!</p>
-                              <button class="buttons" onclick="playAgain()">Play Again!!</button>`;
+        container2.innerHTML += `<p>Oops! Time's Up</p>
+                                 <p>Correct Answer is ${wordList[random].word}!!</p>
+                                 <button class="buttons" onclick="playAgain()">Play Again!!</button>`;
     }
 }
 
